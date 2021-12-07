@@ -1,0 +1,105 @@
+body {
+  display: flex;
+  background: #000;
+}
+
+.absolute {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.animate-1 {
+  background-image: url(./images/1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.animate-2 {
+  background-image: url(./images/2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.animate-3 {
+  background-image: url(./images/3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.animate-4 {
+  background-image: url(./images/4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.animate-5 {
+  background-image: url(./images/5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.animate-6 {
+  background-image: url(./images/6.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.bottom-1 {
+  background-image: url(./images/bottom-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.bottom-2 {
+  background-image: url(./images/bottom-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.disk-animate {
+  --webkit-transform-3d: preserve-3d;
+  transform: rotateX(75deg);
+  overflow: hidden;
+}
+.disk-animate-1 {
+  background-image: url('./images/底部转盘.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+.rotate-1 {
+  animation: rotate 5s ease-out infinite;
+}
+
+.rotate-2 {
+  animation: rotate 3s ease-out 1s infinite reverse;
+}
+.rotate-4 {
+  animation: rotate 6s ease-out 0s infinite reverse;
+}
+.rotate-5 {
+  animation: rotate 2s ease-out 1s infinite;
+}
+
+.disk-rotate-1 {
+  animation: rotate 50s linear infinite;
+}
+.disk-rotate-2 {
+  animation: rotate 10s linear infinite reverse;
+}

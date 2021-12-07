@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animate Pie Chart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div style="position: relative; width: 400px;height: 400px;">
+  <div class="absolute animate-1 rotate-1"></div>
+  <div class="absolute animate-2 rotate-2"></div>
+  <!-- <div class="absolute animate-3"></div> -->
+  <div class="absolute animate-4 rotate-4"></div>
+  <div class="absolute animate-5 rotate-5"></div>
+  <div class="absolute animate-6 rotate-6"></div>
+  <div id="main" class="absolute"></div>
+</div>
+
+<div style="position: relative; width: 400px; height: 400px">
+  <svg width="300" height="300" viewBox="0 0 300 300" class="absolute">
+    <circle cx="150" cy="150" r="140" stroke="#00EDD1" stroke-width="1" stroke-dasharray="200, 240">
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 150 150" to="360 150 150" dur="5s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="150" cy="150" r="130" stroke="#00EDD1" stroke-width="1" >
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 150 150" to="360 150 150" dur="3s" repeatCount="indefinite" />
+    </circle>
+
+    <circle cx="150" cy="150" r="62" stroke="#00EDD1" stroke-width="3" />
+    <circle cx="150" cy="150" r="60" stroke="#00EDD1" stroke-width="6" stroke-dasharray="60, 30" >
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 150 150" to="360 150 150" dur="3s" repeatCount="indefinite" />
+    </circle>
+
+    <circle cx="150" cy="150" r="32" stroke="#00EDD1" stroke-width="5" stroke-dasharray="40, 10000" >
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360 150 150" to="0 150 150" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="150" cy="150" r="29" stroke="#00EDD1" stroke-width="1" />
+  </svg>
+  
+  <div class="absolute animate-6"></div>
+  <div id="main1" class="absolute"></div>
+</div>
+
+<div style="position: relative; width: 200px; height: 200px" class="disk-animate">
+  <div class="absolute bottom-1 disk-rotate-1"></div>
+  <div class="absolute bottom-2 disk-rotate-2"></div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
